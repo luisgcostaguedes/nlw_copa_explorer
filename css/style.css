@@ -34,11 +34,14 @@ body * {
 
 .card h2 {
   display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+
   padding: 8px 16px;
   border: 1px solid #746615;
   border-radius: 6px;
-  gap: 16px;
-  justify-content: center;
+
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
@@ -47,5 +50,32 @@ body * {
 }
 
 .card h2 span {
+  color: #e1e1e6;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 270px;
+}
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card ul li + li {
+  padding-top: 24px;
+  border-top: 1px solid #323238;
+}
+
+.card ul li strong {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+  text-align: center;
   color: #e1e1e6;
 }
